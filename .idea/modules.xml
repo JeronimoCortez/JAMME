@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BuclesAnidados/BuclesAnidados.iml" filepath="$PROJECT_DIR$/BuclesAnidados/BuclesAnidados.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjerciciosGenerales/EjerciciosGenerales.iml" filepath="$PROJECT_DIR$/EjerciciosGenerales/EjerciciosGenerales.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Funciones/Funciones.iml" filepath="$PROJECT_DIR$/Funciones/Funciones.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAMME.iml" filepath="$PROJECT_DIR$/JAMME.iml" />
     </modules>
   </component>
