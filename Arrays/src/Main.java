@@ -17,10 +17,15 @@ public class Main {
             System.out.println(precios[i]);
         }
         */
-        int [] number1 = new int[5];
-        loadArray(number1);
-        displayArray(number1);
-        averageNumber(number1);
+        //int [] number1 = new int[5];
+        //loadArray(number1);
+        //displayArray(number1);
+        //averageNumber(number1);
+        final int row = 2;
+        final int col = 2;
+        int [][] matriz = new int[row][col];
+        loadMatriz(matriz, row, col);
+        displayMatriz(matriz);
     }
     public static void loadArray(int [] number1){
         Scanner read = new Scanner(System.in);
@@ -46,5 +51,29 @@ public class Main {
         }
         store = store / number1.length;
         System.out.println("El promedio de los numeros ingresados es: " + store);
+    }
+
+    public static void loadMatriz(int [][] matriz, int row,int col){
+        int number;
+        Scanner read = new Scanner(System.in);
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.println("Ingrese el valor de la fila " + i + " columna " + j);
+                number = read.nextInt();
+                matriz[i][j] = number;
+            }
+
+        }
+    }
+
+    public static void displayMatriz(int [][] matriz){
+        System.out.println("Los valores de la matriz son: ");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j]);
+                System.out.print(" | ");
+            }
+            System.out.println();
+        }
     }
 }
